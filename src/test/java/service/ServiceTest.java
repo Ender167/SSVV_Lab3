@@ -3,6 +3,7 @@ package service;
 import domain.Nota;
 import domain.Student;
 import domain.Tema;
+import org.junit.Test;
 import repository.NotaXMLRepository;
 import repository.StudentXMLRepository;
 import repository.TemaXMLRepository;
@@ -13,12 +14,10 @@ import validation.Validator;
 
 import java.util.Random;
 
-import static org.junit.jupiter.api.Assertions.*;
+public class ServiceTest {
 
-class ServiceTest {
-
-    @org.junit.jupiter.api.Test
-    void saveStudent() {
+    @Test
+    public void saveStudent() {
 
         Validator<Student> studentValidator = new StudentValidator();
         Validator<Tema> temaValidator = new TemaValidator();
