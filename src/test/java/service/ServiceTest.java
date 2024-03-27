@@ -70,6 +70,6 @@ public class ServiceTest {
         int gr = 400;
 
         assert service.saveStudent("", n, gr) == 1;
-        assert service.saveStudent("id", n, gr) == 0;
+        assert service.saveStudent("1", n, gr) == 0;
     }
 }
